@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние, когда чекбокс выбран -->
+    <item android:state_checked="true" android:color="@color/gray2" />
+    <!-- Состояние, когда чекбокс не выбран -->
+    <item android:color="@android:color/white" />
+</selector>

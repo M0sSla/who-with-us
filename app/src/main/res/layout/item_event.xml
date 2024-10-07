@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" >
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/event_icon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_no_category_event"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/SecondaryTextStyle"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/visitors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_visitors_0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/event_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:focusable="false"
+                    android:id="@+id/eventTitle"
+                    android:hint="@string/event_name"
+                    android:text="@string/event_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eventDescription"
+                    android:focusable="false"
+                    android:hint="@string/event_description"
+                    android:text="@string/event_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/NormalTextStyle"
+                android:id="@+id/eventTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/event_time"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/eventDate"
+                style="@style/NormalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/event_date"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:focusable="false"
+                    android:id="@+id/eventLocation"
+                    android:hint="@string/event_place"
+                    android:text="@string/event_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:backgroundTint="@color/white"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/red"
+                android:layout_margin="2dp"
+                app:cornerRadius="8dp"
+                android:layout_weight="1"
+                android:id="@+id/deleteEventButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/event_delete"
+                android:textColor="@color/red"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_margin="2dp"
+                app:cornerRadius="8dp"
+                android:layout_weight="1"
+                android:id="@+id/editEventButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/event_edit"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_margin="2dp"
+                app:cornerRadius="8dp"
+                android:layout_weight="1"
+                android:id="@+id/joinEventButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/event_join"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:backgroundTint="@color/white"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/black"
+                android:layout_margin="2dp"
+                app:cornerRadius="8dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/leaveEventButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/event_leave"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

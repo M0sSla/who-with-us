@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "975925884186",
+    "project_id": "znakomstva3030",
+    "storage_bucket": "znakomstva3030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975925884186:android:c3749c67d2c7911971e8a3",
+        "android_client_info": {
+          "package_name": "edu.mirea.onebeattrue.znakomstva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975925884186-vnhttissolfku3ne51fgn08pfgvn5kei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUtuS74MryGCe-4AuUOBQ2Zy4_5JByWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975925884186-vnhttissolfku3ne51fgn08pfgvn5kei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
